@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Child from '@/components/child/child'
-import Parent from '@/components/parent/parent'
+import Child from '@/components/VueRouter/child/child'
+import Parent from '@/components/VueRouter/parent/parent'
 Vue.use(Router)
 
 export default new Router({
