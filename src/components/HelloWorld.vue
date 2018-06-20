@@ -29,6 +29,10 @@
         </p>
       </li>
     </ul>
+    <h3>vue 父子组件通信</h3>
+    <ul>
+      <router-link to="/parent"> 父子组件通信</router-link>
+    </ul>
   </div>
 </template>
 
