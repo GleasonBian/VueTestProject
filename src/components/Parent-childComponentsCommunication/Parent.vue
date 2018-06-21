@@ -8,31 +8,29 @@
     <li>2.在template中引用子组件的地方使用v-bind(简写 ':')绑定数据</li>
     <li>3.切换到 到 子组件(Child.vue)中使用props接收来自父组件的数据</li>
   </ul>
-  <quote-child-components :transmit-to-child-components=msg></quote-child-components>
+  <!-- 注意: to-child-data 必须短横线命名 在 child.vue 文件 props 属性中 使用 toChildData 驼峰命名 名字必须一致 否则子组件接收不到数据 -->
+  <quote-child-components :to-child-data="msg"></quote-child-components>
 </div>
 </template>
 <script>
-  //1.引入子组件
-  import Child from './Child'
+//1.引入子组件
+import Child from "./Child";
 export default {
-    data() {
-      return {
-        msg:[1,2,3]
-      }
-    },
-    methods:{
-
-    },
-    //2. 注册组件
-    components:{
-      // 2.1: quote-child-components 是在template中使用的名子,不能使用驼峰,html不认识大小写
-      // 2.2: Child 是 import 组件的名字
-       'quote-child-components':Child
-    }
-}
+  data() {
+    return {
+      msg: [1, 2, 3]
+    };
+  },
+  methods: {},
+  //2. 注册组件
+  components: {
+    // 2.1: quote-child-components 是在template中使用的名子,不能使用驼峰,html不认识大小写
+    // 2.2: Child 是 import 组件的名字
+    "quote-child-components": Child
+  }
+};
 </script>
 <style>
-
 </style>
 
 
