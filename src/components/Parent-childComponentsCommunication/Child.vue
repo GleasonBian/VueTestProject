@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>子组件<span>({{fromMsg}})</span></h1>
-    <ul v-for="(item,index) in toChildData">
+    <ul v-for="(item,index) in toChildData" :key="item.id">
       <li>{{index}}:{{item}}</li>
     </ul>
     <div v-if="!(id==1)">
