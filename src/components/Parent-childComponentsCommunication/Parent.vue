@@ -28,8 +28,13 @@
         <h4>说明:</h4>
         <p>在vue中不允许子组件改变父组件数据，因为vue是单向数据传递，可以通过触发事件来通知父组件改变数据，从而达到改变子组件数据的目的.</p>
       </li>
-      <li>三.1:在子组件内</li>
-      <li>三.6:在父组件页面引入子组件</li>
+      <li>三.1:转到子组件内</li>
+      <li>三.2:在子组件 定义触父组件的方法 "changeParentMethod"</li>
+      <li>三.3:在子组件 changeParentMethod 方法中 通过 $emit 属性 调用父组件方法</li>
+      <li>三.4:$emit 第一个参数 是 在父组件页面 引用 子组件的地方 定义的 供子组件触发方法的名称 responseChild 子父组件中定义名字必须一致</li>
+      <li>三.5:$emit 第二参数 带给父组件的数据</li>
+      <li>以上是在子组件做的事情 接下来转到父组件</li>
+      <li>三.6:父组件页面引入子组件</li>
       <li>三.7:在父组件内定义一个供子组件触发的方法: ChengeParent</li>
       <li>三.8:在父组件引用子组件的地方 使用 v-con(简写:@) 绑定 在子组件$emit内定义的方法名 responseChild 并调用父组件内的方法 : @responseChild="ChengeParent" </li>
       <li>父组件数据被子组件修改:<span style="font-size:20px;color:red;font-weight:800;">{{ParentData}}</span></li>
@@ -67,5 +72,4 @@ export default {
 };
 </script>
 <style scoped>
-
 </style>
