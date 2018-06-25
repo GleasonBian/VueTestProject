@@ -33,18 +33,22 @@
     <ul>
       <router-link to="/ParentChildComm"> 父子组件通信</router-link>
     </ul>
+    <h3>非父子组件通信</h3>
+    <ul>
+      <li><router-link to="/NonParentChild">非父子组件通信</router-link></li>
+    </ul>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'HelloWorld',
-    data() {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
-    }
+export default {
+  name: "HelloWorld",
+  data() {
+    return {
+      msg: "Welcome to Your Vue.js App"
+    };
   }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

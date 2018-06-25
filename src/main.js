@@ -10,7 +10,15 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  data() {
+    return {
+      bus: new Vue() // 给data添加一个 名字为eventHub 的空vue实例,用来传输非父子组件的数据
+    }
+  },
   router,
-  components: { App },
-  template: '<App/>'
-})
+  components: {
+    App
+  },
+  template: '<App/>',
+
+}).$mount('#app'); // 手动挂载，#app

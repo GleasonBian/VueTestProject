@@ -6,6 +6,7 @@ import Child from '@/components/VueRouter/child/child'
 import Parent from '@/components/VueRouter/parent/parent'
 import ParentCildComm from '@/components/Parent-childComponentsCommunication/Parent'
 import GettingStarted from '@/components/learnBasicsVue/GettingStarted'
+import NonParentChildCommunication from '@/components/Non-parent-childComponentsCommunicate/nonParentChildCommunication'
 //2.使用 Router
 Vue.use(Router)
 //3.在 下面配置路由
@@ -34,6 +35,11 @@ export default new Router({
       path: '/GetStart',
       name: 'GettingStarted',
       component: GettingStarted
+    },
+    {
+      path: '/NonParentChild',
+      name: 'NonParentChildCommunication',
+      component: NonParentChildCommunication
     }
   ]
 })
