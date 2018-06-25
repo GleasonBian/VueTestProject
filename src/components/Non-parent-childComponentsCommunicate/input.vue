@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>Input Component!</p>
-    <input type="text" v-model="message" >
+    <p>Input Component</p>
+    <input type="text" v-model="message" placeholder="输入消息发送给dialog组件">
     <button @click="sendMessage">发送消息</button>
   </div>
 </template>
@@ -21,6 +21,5 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 </style>

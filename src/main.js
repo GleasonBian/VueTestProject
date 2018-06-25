@@ -21,4 +21,4 @@ new Vue({
   },
   template: '<App/>',
 
-}).$mount('#app'); // 手动挂载，#app
+}).$mount('#app'); // 手动挂载，#app  
