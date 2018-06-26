@@ -1,15 +1,13 @@
 <template>
 <div>
-  <h3>局部自定义指令</h3>
-  
+  <h3>局部自定义指令(聚焦输入)</h3>
+  <p>当页面加载时获得焦点</p>
+  <input type="text">
 </div>
-<h3></h3>
+
 </template>
 <script>
-export default {
-
-}
+export default {};
 </script>
 <style scoped>
-
 </style>

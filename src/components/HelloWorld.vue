@@ -37,6 +37,10 @@
     <ul>
       <li><router-link to="/NonParentChild">非父子组件通信</router-link></li>
     </ul>
+    <h3>自定义指令</h3>
+    <ul>
+      <li><router-link to="//CustomeDirective">自定义指令</router-link></li>
+    </ul>
   </div>
 </template>
 
