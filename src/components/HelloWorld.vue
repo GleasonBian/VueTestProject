@@ -39,7 +39,7 @@
     </ul>
     <h3>自定义指令</h3>
     <ul>
-      <li><router-link to="//CustomeDirective">自定义指令</router-link></li>
+      <li><router-link to="/CustomeDirective">自定义指令</router-link></li>
     </ul>
   </div>
 </template>

@@ -1,8 +1,8 @@
 <template>
 <div>
-  <LocalCustomDirective></LocalCustomDirective>
+  <local-custom-directive></local-custom-directive>
   <hr>
-  <GlobalCustomDirective></GlobalCustomDirective>
+  <global-custom-directive></global-custom-directive>
 </div>
 </template>
 <script>
