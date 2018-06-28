@@ -1,13 +1,14 @@
 <template>
   <div>
-    <h3>全局自定义指令</h3>
-    <div v-lang="color">{{num}}</div>
-    <p>
+    <h3>二.全局自定义指令</h3>
+    <p><b>示例:</b>&nbsp;使用全局自定指令(v-lang)将 Auto Increase: 结果变为红色 </p>
+    <div>
       <button @click="add">add</button>
-    </p>
+      <span>Auto Increase: <b v-lang="color">{{num}}</b></span>
+    </div>
     <h3>实现全局自定义指令步骤</h3>
     <ul>
-      <li>1.在 main.js 中
+      <li>在 main.js 中
         <pre class="prettyprint">
           //创建 Vue 全局指令
           Vue.directive('lang', function (el, binding) {
@@ -16,8 +17,8 @@
             el.style = 'color:' + binding.value //binding.value就是color颜色red。
           })
         </pre>
-        注意: 在 Vue 实例 前创建自定义指令
       </li>
+      <li>注意: 在 Vue 实例 前创建自定义指令</li>
     </ul>
   </div>
 

@@ -15,15 +15,15 @@
           <li>2.定义参数 focus </li>
           <li>3.自定义指令:inserted 一个函数</li>
           <pre class="prettyprint">
-        directives: {
-          focus: {
-            // 指令的定义
-            inserted: function (el) {
-              el.focus()
+            directives: {
+              focus: {
+                // 指令的定义
+                inserted: function (el) {
+                  el.focus()
+                }
+              }
             }
-          }
-        }
-      </pre>
+          </pre>
         </ul>
       </li>
     </ul>
