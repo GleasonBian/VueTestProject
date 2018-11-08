@@ -8,6 +8,8 @@ import ParentCildComm from '@/components/Parent-childComponentsCommunication/Par
 import GettingStarted from '@/components/learnBasicsVue/GettingStarted'
 import NonParentChildCommunication from '@/components/Non-parent-childComponentsCommunicate/nonParentChildCommunication'
 import CustomeDirective from '@/components/CustomDirective/CustomDirective'
+
+
 //2.使用 Router
 Vue.use(Router)
 //3.在 下面配置路由
@@ -46,6 +48,25 @@ export default new Router({
       path: '/CustomeDirective',
       name: 'CustomeDirective',
       component: CustomeDirective
+    },
+    {
+      path: '/index',
+      name: 'index',
+      component: resolve => require(['@/components/routerTab/index.vue'],resolve),
+      children:[
+        {
+          path:'a',
+          component: resolve => require(['@/components/routerTab/A.vue'], resolve)
+        },
+        {
+          path:'b',
+          component: resolve => require(['@/components/routerTab/B.vue'],resolve)
+        },
+        {
+          path: 'c',
+          component: resolve => require(['@/components/routerTab/C.vue'],resolve)
+        }
+      ]
     }
   ]
 })

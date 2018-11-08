@@ -24,7 +24,7 @@
     </ul>
     <hr height="10px" color="red">
     <b>以下是效果:</b>
-    <Input></Input>
+    <i-nput></i-nput>
     <hr>
     <Dialog></Dialog>
   </div>
@@ -142,5 +142,4 @@ pre.prettyprint {
 b {
   color: rgb(0, 47, 255);
 }
-/* 今天懒了啥也没写 */
 </style>
