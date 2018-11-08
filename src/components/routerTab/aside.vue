@@ -7,9 +7,10 @@
         <i class="el-icon-menu"></i>
         <span>侧边栏</span>
       </template>
-      <el-menu-item index="/index/editorStoreInfo">A组件</el-menu-item>
-      <el-menu-item index="/index/viewStoreInfo">B组件</el-menu-item>
-      <el-menu-item index="/index/viewStoreInfo">C组件</el-menu-item>
+      <!-- 这里 的 index 代表 要去的路由  -->
+      <el-menu-item index="/index/aaa">A组件</el-menu-item>
+      <el-menu-item index="/index/bbb">B组件</el-menu-item>
+      <el-menu-item index="/index/ccc">C组件</el-menu-item>
     </el-submenu>
   </el-menu>
 </template>

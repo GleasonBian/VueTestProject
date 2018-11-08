@@ -1,6 +1,6 @@
 <template>
   <div>
-    B.vue
+    B 组件
   </div>
 </template>
 <script>

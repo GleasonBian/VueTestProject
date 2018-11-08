@@ -1,5 +1,7 @@
 <template>
-  <div>c.vue</div>
+  <div>
+    C 组件
+  </div>
 </template>
 <script>
 export default {

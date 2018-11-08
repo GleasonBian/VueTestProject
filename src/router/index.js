@@ -50,20 +50,20 @@ export default new Router({
       component: CustomeDirective
     },
     {
-      path: '/index',
+      path: '/index',//  注意 / 代表根目录
       name: 'index',
-      component: resolve => require(['@/components/routerTab/index.vue'],resolve),
+      component: resolve => require(['@/components/routerTab/index.vue'],resolve), //懒加载组件
       children:[
         {
-          path:'a',
+          path:'aaa', // A 组件
           component: resolve => require(['@/components/routerTab/A.vue'], resolve)
         },
         {
-          path:'b',
+          path: 'bbb', // B 组件
           component: resolve => require(['@/components/routerTab/B.vue'],resolve)
         },
         {
-          path: 'c',
+          path: 'ccc', // C 组件
           component: resolve => require(['@/components/routerTab/C.vue'],resolve)
         }
       ]
