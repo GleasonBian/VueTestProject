@@ -3,17 +3,7 @@
 </template>
 <script>
 export default {
-  name:'header',
-      data() {
-      return {
-        activeName: 'second'
-      };
-    },
-    methods: {
-      handleClick(tab, event) {
-        console.log(tab, event);
-      }
-    }
+  name:'header'
 }
 </script>
 <style>
