@@ -1,11 +1,18 @@
 <template>
   <div>
-   A 组件
+    <Aone></Aone>
   </div>
 </template>
 <script>
+import  Aone  from "./Achild/Aone";
 export default {
-  name:"AComponent"
+  name:"AComponent",
+  data(){
+    return {}
+  },
+  components:{
+    Aone
+  }
 }
 </script>
 <style>

@@ -41,6 +41,10 @@
     <ul>
       <li><router-link to="/CustomeDirective">自定义指令</router-link></li>
     </ul>
+    <h3>路由切换</h3>
+    <ul>
+      <li><router-link to="/index">路由切换</router-link></li>
+    </ul>
   </div>
 </template>
 

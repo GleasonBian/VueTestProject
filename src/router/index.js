@@ -56,7 +56,16 @@ export default new Router({
       children:[
         {
           path:'aaa', // A 组件
-          component: resolve => require(['@/components/routerTab/A.vue'], resolve)
+          component: resolve => require(['@/components/routerTab/A.vue'], resolve),
+          children:[
+            {
+              path:'aone',
+              component: resolve => require(['@/components/routerTab/Achild/Aone'],resolve),
+            },{
+              path: 'atwo',
+              component: resolve => require(['@/components/routerTab/Achild/Atow'], resolve)
+            }
+          ]
         },
         {
           path: 'bbb', // B 组件
