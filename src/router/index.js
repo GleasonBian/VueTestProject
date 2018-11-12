@@ -74,6 +74,10 @@ export default new Router({
         {
           path: 'ccc', // C 组件
           component: resolve => require(['@/components/routerTab/C.vue'],resolve)
+        },
+        {
+          path: 'atwo',
+          component: resolve => require(['@/components/routerTab/Achild/Atow'], resolve)
         }
       ]
     }
